@@ -11,14 +11,55 @@ body {
   padding: 20px;
 }
 
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
+
+.slogan {
+  font-size: 80px;
+
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
 .main-banner {
   height: 600px;
+
+}
+
+.download-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.myButton {
+  background-color:#0284DC;
+  color:#ffffff;
+  display:inline-block;
+  cursor:pointer;
+  font-size:17px;
+  padding:19px 40px;
+  text-decoration:none;
+}
+.myButton:hover {
+  background-color:#026FDC;
+  color:#ffffff;
+  text-decoration: none;
 }
 
 
 .logo {
+  margin-top: 100px;
+  margin-bottom: 20px;
   height: 120px;
   width: 120px;
+}
+
+.git-icon {
+  height: 50px;
+  width: 50px;
 }
 
 .creators img {
@@ -31,3 +72,12 @@ body {
   margin:0 auto;
   width: 100px;
 }
+
+
+
+
+
+
+
+
+
