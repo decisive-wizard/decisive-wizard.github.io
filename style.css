@@ -6,8 +6,9 @@ body {
   background-color: #180F2E; 
   color: #FFFFFF;
   font-family: 'Open Sans', sans-serif; 
-
 }
+
+
 
 
 /*Navigation Bar */
@@ -57,7 +58,6 @@ body {
 
 .logo {
   margin-top: 70px;
-  /*margin-bottom: 8px;*/
   height: 150px;
   width: 150px;
 }
@@ -85,27 +85,7 @@ body {
   text-decoration: none;
 }
 
-
-
-
-.creators {
-  margin-top: 500px;
-  margin-bottom: 200px;
-}
-
-.creators img {
-  height: 150px;
-  width: 150px;
-  margin: 15px;
-}
-.col-center{
-  margin:0 auto;
-  width: 100px;
-}
-
-
-
-
+/*Product Description*/
 .product-description {
   margin-top: 800px;
   position: relative;
@@ -128,20 +108,17 @@ body {
 }
 
 
+/*Footer*/
+.creators {
+  margin-top: 500px;
+  margin-bottom: 200px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.creators img {
+  height: 150px;
+  width: 150px;
+  margin: 15px;
+}
 
 
 
