@@ -1,0 +1,33 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+  background-color: #180F2E; 
+  color: #FFFFFF;
+}
+
+.title-bar {
+  padding: 20px;
+}
+
+.main-banner {
+  height: 600px;
+}
+
+
+.logo {
+  height: 120px;
+  width: 120px;
+}
+
+.creators img {
+  height: 100px;
+  width: 100px;
+
+  margin: 15px;
+}
+.col-center{
+  margin:0 auto;
+  width: 100px;
+}
