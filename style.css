@@ -18,15 +18,11 @@ body {
 
 .slogan {
   font-size: 80px;
-
   font-weight: 100;
   margin-bottom: 20px;
 }
 
-.main-banner {
-  height: 600px;
 
-}
 
 .download-button {
   padding-top: 10px;
@@ -51,7 +47,7 @@ body {
 
 
 .logo {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 20px;
   height: 120px;
   width: 120px;
@@ -62,10 +58,14 @@ body {
   width: 50px;
 }
 
+.creators {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .creators img {
   height: 100px;
   width: 100px;
-
   margin: 15px;
 }
 .col-center{
@@ -75,7 +75,39 @@ body {
 
 
 
+.product-description {
+  position: relative;
+  background: #D1D1D1; 
+  color: #000000;
+}
+.product-description:before, .product-description:after {
+  content: "";
+  position: absolute;
+  background: #D1D1D1;  /* Match the background */
+  top: 0;
+  bottom: 0;
+  width: 9999px;   /* some huge width */
+} 
+.product-description:before {
+  right: 100%; 
+}
+.product-description:after {
+  left: 100%;
+}
 
+
+.product-description {
+  margin-top: 100px;
+  height: 1000px;
+  font-weight: 100;
+}
+
+.product-description h1 {
+  font-weight: 100;
+  font-size: 60px;
+  padding: 20px;
+
+}
 
 
 
