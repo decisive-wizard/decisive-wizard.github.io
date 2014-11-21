@@ -21,43 +21,34 @@
         <div class="brand-name">
           <span class="title">GridHub</span>
         </div>
-        <!-- Fixed navigation bar content -->
         <div class="git-icon">
           <a href="https://github.com/decisive-wizard/GridHub"><img class="img-responsive" src="img/Github-Mark-120px.png"></a>
         </div>
       </div>
     </nav>
 
-<!--       <div class="navigation-bar">
-        <div class="row">
-          <div class="col-md-12">
-            <span class="title">GridHub</span>
-          </div>
-        </div>
-      </div> -->
+    <div class="banner-section" id="animate2">
 
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="col-md-6 col-md-offset-3 text-center">
-              <img class="logo" src="img/gridhub-logo-500.png">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 text-center">
-          <h1 class="slogan" style="{font-weight: 300;}">One file, unlimited versions</h1>
-        </div>
-        <div class="col-md-12">
-          <div class="col-center">
-            
-          </div>
-        </div>
-
-        <div class="row">
+      <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
-            <a class="myButton">Download GridHub</a>
+            <img class="logo" src="img/gridhub-logo-500.png">
           </div>
+      </div>
+
+      <div class="col-md-12 text-center">
+        <h1 class="slogan" style="{font-weight: 300;}">One file, unlimited versions</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <a class="myButton">Download GridHub</a>
         </div>
+      </div>
+
+    </div>
+
+    <div id="trigger2" class="spacer s1"></div>
+
 
     
     <div class="product-description">
@@ -86,6 +77,40 @@
   </div>
 
 
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/scrollmagic/js/jquery.scrollmagic.js"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+
+      var $bannerSection = $('.banner-section');
+
+      $(window).bind('scroll',function(e){
+          parallaxScroll($bannerSection, 0.25);
+          fadeScroll($bannerSection, 0, 250);
+        });
+     
+        function parallaxScroll($element, dragCoefficient){
+          var scrolledY = $(window).scrollTop();
+          $element.css('top','-'+((scrolledY*dragCoefficient))+'px');
+        }
+
+        function fadeScroll($element, fadeStart, fadeUntil) {
+          var offset = $(document).scrollTop();
+          var opacity = 0;
+
+          if( offset <= fadeStart ) {
+              opacity=1;
+          } else if( offset<=fadeUntil ) {
+              opacity = 1 - (offset/fadeUntil);
+          }
+          $element.css('opacity', opacity);
+        }
+     
+    });
+
+  </script>
 
 </body>
 </html>
