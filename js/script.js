@@ -5,6 +5,7 @@ $(document).ready(function(){
   $(window).bind('scroll',function(e){
       parallaxScroll($bannerSection, 0.25);
       fadeScroll($bannerSection, 0, 250);
+      inceptionAtBottom();
     });
  
     function parallaxScroll($element, dragCoefficient){
@@ -22,6 +23,12 @@ $(document).ready(function(){
           opacity = 1 - (offset/fadeUntil);
       }
       $element.css('opacity', opacity);
+    }
+
+    function inceptionAtBottom() {
+      if (document.documentElement.clientHeight + $(document).scrollTop() >= document.body.offsetHeight){ 
+        document.getElementsByTagName('audio')[0].play();
+      }
     }
  
 });
